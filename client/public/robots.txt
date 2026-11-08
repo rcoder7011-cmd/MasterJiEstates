@@ -1,0 +1,30 @@
+# MasterJiEstates Production robots.txt
+# Official Domain: https://masterjiestates.in
+
+User-agent: *
+Allow: /
+Allow: /properties
+Allow: /properties/*
+Allow: /about
+Allow: /services
+Allow: /contact
+Allow: /faq
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Allow: /disclaimer
+Allow: /brokerage-policy
+Allow: /cookie-policy
+
+# Disallow private user sessions and administrative management
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /dashboard
+Disallow: /dashboard/*
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /design-system
+
+# XML Sitemap
+Sitemap: https://masterjiestates.in/sitemap.xml
+

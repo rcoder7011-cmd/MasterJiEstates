@@ -1,0 +1,41 @@
+{
+  "name": "masterjiestates-server",
+  "version": "1.0.0",
+  "description": "MasterJiEstates — REST API Service",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node scripts/seedDemoProperties.js",
+    "seed:properties": "node scripts/seedDemoProperties.js",
+    "seed:admin": "node scripts/seedAdmin.js",
+    "test:auth": "node scripts/testAuth.js",
+    "test:dashboard": "node scripts/testDashboard.js",
+    "test:submission": "node scripts/testPropertySubmission.js",
+    "test:admin": "node scripts/testAdmin.js",
+    "test:business": "node scripts/testBusinessOperations.js",
+    "test:part14": "node scripts/testPart14.js",
+    "test:e2e": "node scripts/testPart15E2E.js",
+    "test:live": "node scripts/testMongoLiveIntegration.js",
+    "test:all": "node scripts/testAuth.js && node scripts/testDashboard.js && node scripts/testPropertySubmission.js && node scripts/testAdmin.js && node scripts/testBusinessOperations.js && node scripts/testPart14.js && node scripts/testPart15E2E.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.11.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.3",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "author": "MasterJiEstates Team",
+  "license": "ISC"
+}
