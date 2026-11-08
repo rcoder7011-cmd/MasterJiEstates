@@ -44,7 +44,7 @@ const DEFAULT_COMPANY_CONTENT = {
     email: 'masterjiestates@gmail.com',
     supportEmail: 'masterjiestates@gmail.com',
     grievanceEmail: 'masterjiestates@gmail.com',
-    serviceAreas: ['Delhi', 'Uttar Pradesh', 'Ghaziabad', 'Noida', 'Gurugram'],
+    serviceAreas: ['Delhi', 'Uttar Pradesh', 'Ghaziabad', 'Noida', 'Gurugram', 'Indirapuram'],
     operatingHours: 'Monday – Saturday: 9:30 AM – 7:00 PM IST (Sundays by appointment for site visits)',
     note: 'Office visits are welcomed by prior appointment for tailored advisory.',
   },
@@ -1046,4 +1046,3 @@ export async function updateContentSection(adminUser, section, sectionData) {
     updatedAt: new Date().toISOString(),
   };
 }
-

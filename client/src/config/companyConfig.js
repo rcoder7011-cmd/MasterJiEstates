@@ -37,7 +37,7 @@ export const COMPANY_CONFIG = {
   operatingHours: 'Monday – Saturday: 9:30 AM – 7:00 PM IST (Sundays by appointment for site visits)',
 
   // Service Areas
-  serviceAreas: ['Delhi', 'Uttar Pradesh', 'Ghaziabad', 'Noida', 'Gurugram'],
+  serviceAreas: ['Delhi', 'Uttar Pradesh', 'Ghaziabad', 'Noida', 'Gurugram', 'Indirapuram'],
 
   // Official Web Domain
   website: 'https://masterjiestates.in',
@@ -164,4 +164,3 @@ export function getWhatsAppUrl(context = 'general', data = {}) {
 }
 
 export default COMPANY_CONFIG;
-
