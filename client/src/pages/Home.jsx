@@ -118,6 +118,18 @@ export default function Home() {
 
         {/* Final Conversion CTA */}
         <FinalCTA />
+
+        {/* Services Overview */}
+        <section className="py-12 sm:py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-card border border-slate-200/80 bg-white">
+            <img
+              src="/images/MasterJiEstates%20Services%20Overview.png"
+              alt="MasterJiEstates Services Overview — Everything You Need Under One Roof"
+              className="w-full h-auto object-contain block"
+              loading="lazy"
+            />
+          </div>
+        </section>
       </main>
 
       {/* Corporate Real Estate Footer with RERA & Regulatory Disclaimers */}

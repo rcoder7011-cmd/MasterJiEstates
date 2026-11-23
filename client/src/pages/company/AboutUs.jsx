@@ -392,6 +392,18 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
+
+        {/* Services Overview */}
+        <section className="pb-16 sm:pb-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-card border border-slate-200/80 bg-white">
+            <img
+              src="/images/MasterJiEstates%20Services%20Overview.png"
+              alt="MasterJiEstates Services Overview — Everything You Need Under One Roof"
+              className="w-full h-auto object-contain block"
+              loading="lazy"
+            />
+          </div>
+        </section>
       </main>
 
       <Footer />
