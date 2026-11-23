@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "MJ Estates",
+    "slug": "mj-estates",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "mjestates",
+    "userInterfaceStyle": "light",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#142B4F"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.masterjiestates.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#142B4F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "INTERNET",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "softwareKeyboardLayoutMode": "pan",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "MJ Estates uses your location to discover nearby properties and calculate distance."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

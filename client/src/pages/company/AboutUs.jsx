@@ -106,8 +106,8 @@ export default function AboutUs() {
               <div className="relative group rounded-3xl overflow-hidden border border-slate-200/90 shadow-card bg-white p-2.5 transition-all duration-300 hover:shadow-elevated">
                 <div className="relative rounded-2xl overflow-hidden aspect-[2/3] max-h-[620px] w-full bg-slate-100">
                   <img
-                    src="/images/profileImg.jpeg"
-                    alt="MasterJiEstates - Building Better Tomorrow"
+                    src="/images/FounderImg.png"
+                    alt="Riyaz Saifi - Founder, MasterJiEstates"
                     className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     loading="eager"
                   />
@@ -227,16 +227,10 @@ export default function AboutUs() {
                 <div className="relative flex-shrink-0 mx-auto sm:mx-0">
                   <div className="w-60 h-80 sm:w-64 sm:h-84 md:w-72 md:h-96 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border-2 border-brand-gold/50 bg-brand-navy-dark ring-4 ring-brand-gold/10">
                     <img
-                      src="/images/Master Ji Estates Reception Lobby.png"
-                      alt="Mr Shokin - Founder &amp; Property Consultant"
+                      src="/images/ceo.jpeg"
+                      alt="Mr Shokin - CEO &amp; Property Consultant"
                       className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
                       loading="lazy"
-                      onError={(e) => {
-                        // Fallback alias if space encoding behaves differently
-                        if (e.currentTarget.src !== window.location.origin + '/images/Master_Ji_Estates_Reception_Lobby.png') {
-                          e.currentTarget.src = '/images/Master_Ji_Estates_Reception_Lobby.png';
-                        }
-                      }}
                     />
                   </div>
                   <span className="absolute -bottom-2.5 right-4 sm:right-6 px-2.5 py-1 rounded-full bg-emerald-500 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm flex items-center gap-1 border-2 border-white">
