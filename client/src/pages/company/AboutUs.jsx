@@ -101,14 +101,14 @@ export default function AboutUs() {
         {/* Corporate Profile & Reception Lobby Showcase (Two-Column Layout) */}
         <section className="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left Column: Reception Lobby Photograph */}
+            {/* Left Column: Corporate Profile Photograph */}
             <div className="about-anim-image lg:col-span-5 flex flex-col justify-center">
               <div className="relative group rounded-3xl overflow-hidden border border-slate-200/90 shadow-card bg-white p-2.5 transition-all duration-300 hover:shadow-elevated">
                 <div className="relative rounded-2xl overflow-hidden aspect-[2/3] max-h-[620px] w-full bg-slate-100">
                   <img
-                    src="/images/Master Ji Estates Reception Lobby.png"
-                    alt="MasterJiEstates Reception Lobby in Noida Sector 62A"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    src="/images/profileImg.jpeg"
+                    alt="MasterJiEstates - Building Better Tomorrow"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     loading="eager"
                   />
                   {/* Bottom Vignette with Office Caption */}
@@ -221,46 +221,46 @@ export default function AboutUs() {
             </div>
 
             {/* Verified Leadership Profile Card */}
-            <div className="about-anim-leadership max-w-2xl mx-auto bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/80 shadow-card hover:shadow-elevated transition-all duration-300">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8 text-center sm:text-left">
+            <div className="about-anim-leadership max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/80 shadow-card hover:shadow-elevated transition-all duration-300">
+              <div className="flex flex-col sm:flex-row items-center sm:items-center lg:items-start gap-6 sm:gap-8 lg:gap-10 text-center sm:text-left">
                 {/* CEO Leadership Portrait */}
-                <div className="relative flex-shrink-0">
-                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden shadow-md border-2 border-brand-gold/50 bg-brand-navy-dark ring-4 ring-brand-gold/10">
+                <div className="relative flex-shrink-0 mx-auto sm:mx-0">
+                  <div className="w-60 h-80 sm:w-64 sm:h-84 md:w-72 md:h-96 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border-2 border-brand-gold/50 bg-brand-navy-dark ring-4 ring-brand-gold/10">
                     <img
-                      src="/images/CEO%20img.jpeg"
+                      src="/images/Master Ji Estates Reception Lobby.png"
                       alt="Mr Shokin - Founder &amp; Property Consultant"
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
                       loading="lazy"
                       onError={(e) => {
                         // Fallback alias if space encoding behaves differently
-                        if (e.currentTarget.src !== window.location.origin + '/images/ceo.jpeg') {
-                          e.currentTarget.src = '/images/ceo.jpeg';
+                        if (e.currentTarget.src !== window.location.origin + '/images/Master_Ji_Estates_Reception_Lobby.png') {
+                          e.currentTarget.src = '/images/Master_Ji_Estates_Reception_Lobby.png';
                         }
                       }}
                     />
                   </div>
-                  <span className="absolute -bottom-2.5 -right-1.5 px-2 py-0.5 rounded-full bg-emerald-500 text-white text-[10px] font-bold uppercase tracking-wider shadow-xs flex items-center gap-1 border-2 border-white">
+                  <span className="absolute -bottom-2.5 right-4 sm:right-6 px-2.5 py-1 rounded-full bg-emerald-500 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm flex items-center gap-1 border-2 border-white">
                     <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                     Verified
                   </span>
                 </div>
 
                 {/* Profile Details */}
-                <div className="flex-1 space-y-3">
-                  <div>
-                    <h3 className="text-2xl font-heading font-bold text-brand-navy tracking-tight">
+                <div className="flex-1 space-y-4 sm:space-y-5 flex flex-col justify-center">
+                  <div className="space-y-2">
+                    <h3 className="text-2xl sm:text-3xl font-heading font-bold text-brand-navy tracking-tight">
                       Mr Shokin
                     </h3>
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-400/15 text-amber-900 border border-amber-400/30 uppercase tracking-wider mt-1.5">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-400/15 text-amber-900 border border-amber-400/30 uppercase tracking-wider">
                       <span>Founder &amp; Property Consultant</span>
                     </div>
                   </div>
 
-                  <p className="text-sm text-slate-600 leading-relaxed font-light">
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-light">
                     Leading MasterJiEstates with a dedicated commitment to transparency, rigorous property scrutiny, and complete privacy for buyers and property owners. Available for direct consultations, acquisition advisory, and transaction coordination.
                   </p>
 
-                  <div className="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-center sm:justify-start gap-3">
+                  <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-center sm:justify-start gap-3">
                     <WhatsAppButton
                       context="about"
                       variant="solid"
